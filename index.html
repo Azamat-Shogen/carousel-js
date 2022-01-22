@@ -1,0 +1,72 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="resource/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+    <div class="main">
+        <h3>Carousel</h3>
+        <div class="carousel-wrapper">
+        <div class="carousel">
+
+            <div class="flex-item" style="display: block">
+                <img src="./resource/cat1.png" width="90%" height="50%">
+            </div>
+            <div class="flex-item">
+                <img src="./resource/cat2.png" width="90%" height="50%">
+            </div>
+            <div class="flex-item">
+                <img src="./resource/cat3.png" width="90%" height="50%">
+            </div>
+
+
+           <!-- Back and forward buttons -->
+        <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a> 
+        </div>
+
+        
+
+        <div class="dots">
+         <span class="dot enable" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        </div>
+       
+        <hr />
+        <h3>Cards</h3>
+
+        <div class="cards-container">
+            <div class="flex-item2">
+                <img src="./resource/cat1.png" alt="cat" width="300" height="200"/>
+
+                <h4>Card Title</h4>
+                <p>I know what you did last summer</p>
+            </div>
+            <div class="flex-item2">
+            <img src="./resource/cat2.png" alt="cat" width="300" height="200"/>
+                <h4>Card Title</h4>
+                <p>I know what you did last summer</p>
+            </div>
+            <div class="flex-item2">
+                <img src="./resource/cat3.png" width="300" height="200" alt="cat"/>
+                <h4>Card Title</h4>
+                <p>I know what you did last summer</p>
+            </div>
+        </div>
+    </div>
+        
+        <script src="resource/index.js" async defer></script>
+    </body>
+</html>
+

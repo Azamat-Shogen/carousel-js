@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+.main {
+    background-color: rgb(245, 243, 233);
+    max-width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+}
+
+
+.cards-container{
+    display: flex;
+    background-color: rgb(149, 195, 240);
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+img {
+    width: 100%; 
+    object-fit: contain;
+}
+
+.back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+
+  .forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.carousel {
+    position: relative;
+    margin: auto;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.flex-item {
+    display: none;
+}
+
+.carousel-wrapper {
+    background-color: rgb(149, 195, 240);
+}
+
+.carousel > div {
+    /* background-color: #f1f1f1; */
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    /*min-width: 150px;*/
+    min-height: 300px;
+    flex: 30%;
+}
+
+.dots {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The circles or bullets and indicators */
+.dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: rgb(188, 229, 229);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+
+  .enable, .dot:hover {
+    background-color: #717161;
+  }
+
+  /* Faint animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+
+@-webkit-keyframes fade {
+from {opacity: .5}
+to {opacity: 2}
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+
+
+
+.flex-item2 {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    min-height: 300px;
+    flex: 30%
+}
+
+@media (max-width: 800px) {
+    .cards-container {
+      flex-direction: column;
+    }
+  }
